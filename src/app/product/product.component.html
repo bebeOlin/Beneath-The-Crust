@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+    <div class="col" *ngFor="let product of products">
+      <div class="card">
+        <img class="card-img-top" src="{{ product.image }}" style="height: 200px; width: auto; object-fit: cover;">
+        <div class="card-body">
+          <h5 class="card-title">{{ product.title }}</h5>
+          <p class="card-text">{{ product.description }}</p>
+          <h3>{{ product.price }}</h3>
+          <div class="d-grid">
+            <a href="{{ product.url }}" class="btn btn-danger">BUY NOW</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
